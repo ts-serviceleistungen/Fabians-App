@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#061a2f">
+  <meta name="description" content="Frostyx – Fabians persönlicher Kalender, Taschengeld und Spiele">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frostyx – Fabian</title>
+</head>
+<body>
+  <div class="login-screen" id="loginScreen">
+    <div class="login-card glass">
+      <div class="login-frost">❄️</div>
+      <div class="eyebrow">FROSTYX</div>
+      <h1>Willkommen, Fabian</h1>
+      <p>Logge dich ein, um deine Eiswelt zu betreten.</p>
+      <label>Benutzername
+        <input id="loginUser" autocomplete="username" placeholder="Fabian">
+      </label>
+      <label>Passwort
+        <input id="loginPass" type="password" autocomplete="current-password" placeholder="Passwort">
+      </label>
+      <div class="login-error" id="loginError"></div>
+      <button class="primary login-btn" id="loginBtn">❄️ Einloggen</button>
+    </div>
+  </div>
+  <div class="bg"></div>
+  <div class="ice-glow"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">❄</div>
+      <div>
+        <div class="brand-title">FROSTYX</div>
+        <div class="brand-sub">Fabians eisiger Begleiter</div>
+      </div>
+    </div>
+    <div class="top-actions"><button class="icon-btn" id="parentBtn" title="Elternbereich">🔐</button><button class="icon-btn" id="logoutBtn" title="Abmelden">↪</button></div>
+  </header>
+
+  <main>
+    <section class="hero glass">
+      <div>
+        <div class="eyebrow">DEIN EISIGER BEGLEITER</div>
+        <h1>Hallo Fabian! <span>❄️</span></h1>
+        <p id="frostyxMessage">Zusammen sind wir stärker.</p>
+      </div>
+      <div class="hero-character">
+        <img src="assets/frostyx.png" alt="Frostyx">
+      </div>
+    </section>
+
+    <section class="quick-grid">
+      <button class="tile glass" data-page="calendar"><span>📅</span><b>Mein Kalender</b><small>Schule · Fußball · Triathlon</small></button>
+      <button class="tile glass" data-page="money"><span>💰</span><b>Mein Taschengeld</b><small id="quickBalance">0,00 €</small></button>
+      <button class="tile glass" data-page="games"><span>🎮</span><b>Meine Spiele</b><small>Kristalle sammeln</small></button>
+      <button class="tile glass" data-page="achievements"><span>🏆</span><b>Meine Erfolge</b><small id="quickPoints">0 Kristalle</small></button>
+    </section>
+
+    <section class="content glass">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">FROSTYX-REICH</div>
+          <h2 id="pageTitle">Heute</h2>
+        </div>
+        <button class="small-btn" id="homeBtn">⌂ Start</button>
+      </div>
+      <div id="pageContent"></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav glass">
+    <button data-page="home">🏠<span>Start</span></button>
+    <button data-page="calendar">📅<span>Kalender</span></button>
+    <button data-page="money">💰<span>Geld</span></button>
+    <button data-page="games">🎮<span>Spiele</span></button>
+  </nav>
+
+  <div class="modal hidden" id="parentModal">
+    <div class="modal-card glass">
+      <button class="close" id="closeParent">×</button>
+      <h2>🔐 Elternbereich</h2>
+      <p>Hier können die Einstellungen später geschützt werden.</p>
+      <label>Start der Taschengeld-Regel
+        <input type="date" id="allowanceStart">
+      </label>
+      <label>Wöchentliches Taschengeld
+        <input type="number" id="allowanceAmount" min="0" step="0.50">
+      </label>
+      <button class="primary" id="saveSettings">Einstellungen speichern</button>
+      <p class="hint">Standard: 10 € jeden Montag ab 21.09.2026.</p>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Frostyx – Fabian",
+  "short_name": "Frostyx",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#020b16",
+  "theme_color": "#061a2f",
+  "icons": []
+}
