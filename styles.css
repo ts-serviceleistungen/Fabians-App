@@ -36,3 +36,28 @@ main{width:min(1180px,calc(100% - 24px));margin:22px auto}
 .login-card label{text-align:left;margin-top:14px}
 .login-btn{width:100%;font-size:16px;margin-top:14px}
 .login-error{min-height:20px;color:#ffb4b4;font-size:13px;margin-top:8px}
+
+@media(max-width:600px){
+  body{font-size:15px}
+  .topbar{padding:11px 12px}
+  .brand-title{font-size:18px;letter-spacing:2px}
+  .brand-sub{font-size:9px}
+  .brand-mark{font-size:24px}
+  main{width:calc(100% - 12px);margin:10px auto}
+  .hero{min-height:210px;padding:20px;border-radius:20px}
+  .hero h1{font-size:30px;max-width:70%}
+  .hero p{font-size:15px;max-width:62%}
+  .hero-character{width:300px;right:-95px;bottom:-95px;opacity:.48}
+  .tile{padding:14px;border-radius:16px}
+  .tile span{font-size:24px;margin-bottom:8px}
+  .tile b{font-size:15px}
+  .tile small{font-size:11px}
+  .content{padding:15px;border-radius:20px;min-height:430px}
+  .section-head h2{font-size:23px}
+  .calendar-grid{grid-template-columns:repeat(7,minmax(0,1fr))}
+  .day{min-height:58px;padding:5px;border-radius:8px}
+  .event-dot{display:none}
+  .day.today{box-shadow:inset 0 0 10px rgba(245,215,122,.12)}
+  .balance{font-size:38px}
+  .bottom-nav{bottom:7px;width:calc(100% - 12px)}
+}
