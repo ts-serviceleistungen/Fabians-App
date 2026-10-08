@@ -5,7 +5,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);background:#020b16}
 body{padding-bottom:90px;overflow-x:hidden}
-.bg{position:fixed;inset:0;background-image:linear-gradient(180deg,rgba(1,11,22,.2),rgba(1,11,22,.72)),url("assets/frostyx.png");background-size:cover;background-position:center;filter:saturate(1.08);z-index:-3}
+.bg{position:fixed;inset:0;background-image:linear-gradient(180deg,rgba(1,11,22,.2),rgba(1,11,22,.72)),url("frostyx.png");background-size:cover;background-position:center;filter:saturate(1.08);z-index:-3}
 .ice-glow{position:fixed;inset:0;background:radial-gradient(circle at 25% 25%,rgba(0,170,255,.16),transparent 35%),radial-gradient(circle at 80% 75%,rgba(75,180,255,.14),transparent 35%);z-index:-2;pointer-events:none}
 .topbar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px max(16px,calc((100vw - 1180px)/2));background:rgba(1,10,20,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .brand{display:flex;gap:10px;align-items:center}.brand-mark{font-size:30px;color:var(--ice)}.brand-title{font-size:22px;font-weight:900;letter-spacing:3px}.brand-sub{font-size:11px;color:var(--ice2)}
@@ -27,7 +27,7 @@ main{width:min(1180px,calc(100% - 24px));margin:22px auto}
 @media(max-width:800px){.quick-grid{grid-template-columns:repeat(2,1fr)}.hero-character{width:360px;right:-90px;bottom:-115px;opacity:.48}.money-card,.game-grid,.achievements{grid-template-columns:1fr}.calendar-grid{gap:4px}.day{min-height:65px;font-size:12px}.event-dot{font-size:9px}.form-row,.form-row.three{grid-template-columns:1fr}}
 
 .top-actions{display:flex;gap:8px}
-.login-screen{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:18px;background:linear-gradient(180deg,rgba(1,8,17,.88),rgba(1,12,25,.94));background-image:linear-gradient(180deg,rgba(1,8,17,.78),rgba(1,12,25,.94)),url("assets/frostyx.png");background-size:cover;background-position:center}
+.login-screen{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:18px;background:linear-gradient(180deg,rgba(1,8,17,.88),rgba(1,12,25,.94));background-image:linear-gradient(180deg,rgba(1,8,17,.78),rgba(1,12,25,.94)),url("frostyx.png");background-size:cover;background-position:center}
 .login-screen.hidden{display:none}
 .login-card{width:min(440px,100%);border-radius:24px;padding:30px;text-align:center}
 .login-card h1{margin:8px 0;font-size:32px}
